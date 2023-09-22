@@ -1,0 +1,18 @@
+{
+  "name": "ttbot_v2",
+  "version": "2.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "b00st3d",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.1"
+  },
+  "description": ""
+}

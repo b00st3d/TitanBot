@@ -1,0 +1,14 @@
+const { EmbedBuilder } = require('discord.js');
+const vars = require('../../../config/config.json');
+
+module.exports.rulesEmbed = function rulesEmbed(){//build the embed for displaying rules
+    const rulesEmbed = new EmbedBuilder()
+        .setColor(vars.embedColor)
+        .setThumbnail(vars.NRicon)
+        .setTitle("__Tech Titans__\n\n We are a vibrant and dynamic Discord community dedicated to all things programming and technology.\n\n__Tech Titan Rules__")
+        .setDescription("\n\n\
+        1. Be respectful and polite; this means tolerating other users, treating them with respect, not posting discriminatory or inflammatory content, and not spamming channels.\n\n\
+        2. Keep your pronouns and sex life to yourself or get banned.\n\n\
+        3. The Moderation and Admin team have the final say in any moderation decision. If you do not approve, voice your feedback.");
+    return(rulesEmbed);
+}
