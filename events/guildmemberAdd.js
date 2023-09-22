@@ -23,7 +23,7 @@ module.exports = {
             guildInvites.set(member.guild.id, cachedInvites);
         
             if(!member.user.bot){ //if new user isn't a bot then give the newUser role and add to the userData.json
-                cmd.storeNewUser(guild.id, member.id, member.user.globalName)
+                cmd.storeNewUser(guild.id, member.id, member.user.username)
                 if (usedInvite !== undefined){
                     console.log(`${timestamp()} - server: ${member.guild.name} - type: USER - ${member.user.username} has joined ${member.guild.name} with the code: ${usedInvite.code}.`)
                 } else {console.log(`${timestamp()} - server: ${member.guild.name} - type: USER - ${member.user.username} has joined ${member.guild.name} with unknown code.`)}
