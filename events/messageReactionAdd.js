@@ -31,7 +31,7 @@ module.exports = {
                     await addRole(reaction, user, 'Advanced 🚀')
                 break;
                 case '🏆':
-                    await addRole(reaction, user, 'Expert 🏆')
+                    //await addRole(reaction, user, 'Expert 🏆')
                 break
                 default: return;
             }

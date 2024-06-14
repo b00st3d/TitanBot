@@ -31,7 +31,7 @@ module.exports = {
                     await removeRole(reaction, user, 'Advanced 🚀')
                 break;
                 case '🏆':
-                    await removeRole(reaction, user, 'Expert 🏆')
+                    //await removeRole(reaction, user, 'Expert 🏆')
                 break
                 default: return;
             }

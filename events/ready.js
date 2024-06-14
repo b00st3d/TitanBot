@@ -9,8 +9,10 @@ module.exports = {
     name: Events.ClientReady,
     once: true,
     execute(client) {
-        client.user.setActivity("/help || Tech Titans", { type: ActivityType.Watching }); //Watching !ttHelp || Tech Titans
-        console.log(`${timestamp()} Logged in as ${client.user.username} - Client activity set to '${client.user.presence.activities[0].name}'`);
+	const activityText = "/help || Tech Titans"
+	//const activityText = "/help || ^ Slash commands suck?  Give me a break!"
+        client.user.setActivity( activityText, { type: ActivityType.Watching });
+	console.log(`${timestamp()} Logged in as ${client.user.username} - Client activity set to '${client.user.presence.activities[0].name}'`);
         
         client.guilds.cache.forEach(guild => {
             guild.invites.fetch()
